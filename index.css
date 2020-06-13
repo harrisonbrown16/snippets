@@ -1,0 +1,54 @@
+html {
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    margin: 0px;
+}
+
+.outerWrap {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+}
+
+.innerWrap {
+    display: flex;
+    flex-direction: row;
+    width:400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.slideOne, .slideTwo, .slideThree, .slideFour {
+    width: 90vw;
+    height: 90vh;
+    margin: 5px;
+}
+
+.slideOne {
+    background-color: blue;
+}
+
+.slideTwo {
+    background-color: gray;
+}
+
+.slideThree {
+    background-color: rgb(110, 61, 61);
+}
+
+.slideFour {
+    background-color: rgb(179, 101, 162);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
